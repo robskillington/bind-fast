@@ -1,0 +1,31 @@
+{
+  "name": "bind-fast",
+  "version": "1.0.0",
+  "description": "Replacement for native bind() which does not optimize well",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run cover",
+    "cover": "istanbul cover --report cobertura --print detail node_modules/.bin/tape -- test/index.js && istanbul check-coverage --branches=100",
+    "view-cover": "istanbul report html && opn ./coverage/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/robskillington/bind-fast.git"
+  },
+  "keywords": [
+    "utility",
+    "events",
+    "callbacks"
+  ],
+  "author": "Rob Skillington",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robskillington/bind-fast/issues"
+  },
+  "homepage": "https://github.com/robskillington/bind-fast",
+  "devDependencies": {
+    "istanbul": "^0.3.7",
+    "sinon": "^1.10.3",
+    "tape": "^2.0.0"
+  }
+}
