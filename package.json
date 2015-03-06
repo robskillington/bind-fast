@@ -1,6 +1,6 @@
 {
   "name": "bind-fast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Replacement for native bind() which does not optimize well",
   "main": "index.js",
   "scripts": {
