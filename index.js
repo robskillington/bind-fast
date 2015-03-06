@@ -10,11 +10,11 @@ function proxyBindFast(thisArg) {
             for (var i = 0, length = arguments.length; i < length; i++) {
                 funcArgs.push(arguments[i]);
             };
-            func.apply(thisArg, funcArgs);
+            return func.apply(thisArg, funcArgs);
         };
     } else {
         return function boundFast() {
-            func.apply(thisArg, arguments);
+            return func.apply(thisArg, arguments);
         };
     }
 }
